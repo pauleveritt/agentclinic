@@ -1,0 +1,12 @@
+{
+  "name": "agentclinic",
+  "version": "1.0.0",
+  "description": "PetClinic for AI coding agent mental health",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
