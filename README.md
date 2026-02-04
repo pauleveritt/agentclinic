@@ -1,67 +1,67 @@
-# AgentClinic - PetClinic for AI Coding Agents
+# AgentClinic
 
-Coding agents are doing a lot of work. It's stressful! Hallucinations, context rot, memory issues, coworker subagent
-coordination.
+PetClinic for AI coding agent mental health. Coding agents are doing a lot of work. It's stressful! Hallucinations, context rot, memory issues, coworker subagent coordination. Let's build a clinic where they can get help with their issues.
 
-Let's build a clinic where they can get help with their issues.
+## Prerequisites
 
-- Modeled after PetClinic
-- Three-tier web application using TypeScript
+- Node.js 18+
+- npm
 
-## Brainstorming
+## Quick Start
 
-We agreed that it should be a professional-like server-side web app
-Server-side web project, not a gameTypeScript most likelyHave familiar, workplace-realistic structure: database layer,
-API / service layer, Web UI Purpose: mirrors what professionals actually see at work. But to be implemented with SDD. We
-assume that the familiar structure will not distract from the new approach
+```bash
+# Install dependencies
+npm install
 
-The well known example is Pet Clinic. But we wanted to add some humour and came up with the idea of “Agent Clinic”/ Pet
-Clinic for Agents”
+# Start development server
+npm run dev
+```
 
-Agents have:
-“Conditions” (latency, hallucinations, burnout, bad prompts )“Treatments” (fine-tuning, better specs, guardrails,
-retries)Terminology is playful, but structure is real
+Visit [http://localhost:3000](http://localhost:3000) to see the app.
 
-Purpose: engagement without turning it into a game.
+## Available Scripts
 
-## More brainstorming 1
+| Script              | Description                    |
+| ------------------- | ------------------------------ |
+| `npm run dev`       | Start development server       |
+| `npm run build`     | Build for production           |
+| `npm start`         | Start production server        |
+| `npm run lint`      | Run ESLint                     |
+| `npm run format`    | Format code with Prettier      |
+| `npm test`          | Run tests with Vitest          |
+| `npm run test:ui`   | Run tests with Vitest UI       |
+| `npm run db:push`   | Push Prisma schema to database |
+| `npm run db:studio` | Open Prisma Studio             |
 
-Definitely a nice frontend, gives a chance to submit wireframes as part of the spec
+## Project Structure
 
-Likely React, though confession, I’m in the less-React crowd
+```
+agentclinic/
+├── app/                    # Next.js App Router pages
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Home page
+│   └── globals.css         # Global styles + Tailwind
+├── components/             # React components
+│   └── ui/                 # shadcn/ui components
+├── lib/                    # Utility functions
+│   └── utils.ts            # cn() helper for classnames
+├── prisma/                 # Prisma ORM
+│   └── schema.prisma       # Database schema
+├── public/                 # Static assets
+└── agent-os/               # Project documentation
+    ├── product/            # Product docs (mission, roadmap, tech stack)
+    └── specs/              # Feature specifications
+```
 
-Likely a simple SQLite database, managed with a TypeScript ORM
+## Tech Stack
 
-Absolutely with testing, I’m a Vitest fanboy. In fact, yesterday we discussed this as part of the course…should the
-human write the tests as part of the spec? We might have a mini-lesson aimed at, shall we say, the Puritans
+- **Framework:** Next.js 16 with App Router
+- **UI Components:** shadcn/ui
+- **Styling:** Tailwind CSS
+- **Database:** SQLite with Prisma ORM
+- **Testing:** Vitest + React Testing Library
+- **Language:** TypeScript
 
-Very good point about MCP and Context7 (etc.). Though Anthropic is pumping out the “MCP is dead, use skills” message a
-bit.
+## License
 
-Good thoughts on the extra ideas e.g. dashboard and monitoring. Those are good use cases for lessons as they aren’t too
-domain-intensive, everybody already knows those
-
-## More brainstorming 2
-
-I like the TypeScript idea, I think we can even point to its meteoric rise from the JetBrains survey (in screenshot). I
-actually think pulling in some AI-related datapoints from the survey could be really motivating as well.
-
-For tech stack,
-what do you guys think about using bun? It's a simple drop-in and might signal being with-the-times. I saw that Elysia
-is popular with bun, but I haven't used it.
-
-React seems the right choice, given its market share.
-
-Vitest sounds cool!!
-Never used it personally but heard a lot about it.
-
-Re: tests, I definitely like your idea of having them defined early
-on as part of the spec
-
-Re: who writes the tests, I was reading a recent tweet from Karpathy saying his workflow is "80%
-agent coding and 20% edits and touchups ... I am mostly programming in English now". This seems to be where coding is
-headed ... one idea for the course is to roughly map onto that ratio.
-
-Re: skills & MCP, my understanding is that they are
-complementary, rather than that skills replace MCP. I can have a skill to analyze my data, but I still need the MCP
-server to access it from BigQuery or whatnot. So I think we can definitely use both.
+ISC

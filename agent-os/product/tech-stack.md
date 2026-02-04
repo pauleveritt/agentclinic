@@ -1,19 +1,24 @@
 # Tech Stack
 
-## Frontend
+## Framework
 
-- **React** with **TypeScript** for type-safe UI development
+- **Next.js** with **TypeScript** for unified full-stack development
+  - App Router for file-based routing
+  - API routes for backend endpoints (no separate Express server)
+  - Server components for optimal performance
 
-## Backend
+## UI Components
 
-- **Node.js** with **Express** framework for API endpoints
+- **shadcn/ui** for professional, customizable components
+  - Components are copied into the project (not installed as dependencies)
+  - Full control over styling and behavior
+  - Built on Radix UI primitives
 
-## API Documentation
+## Styling
 
-- **OpenAPI/Swagger** for interactive API documentation
-  - Auto-generated from route definitions
-  - Swagger UI at `/api-docs` for testing endpoints during demos
-  - Great for teaching RESTful API design
+- **Tailwind CSS** for utility-first styling
+  - CSS variables for theming
+  - Dark mode support
 
 ## Database
 
@@ -25,3 +30,7 @@
 
 - **Vitest** for fast, Vite-native test runner
 - **React Testing Library** for component testing
+
+## Architecture Note
+
+This project uses a unified Next.js architecture instead of separate frontend and backend folders. API routes live alongside pages in the `/app` directory, eliminating CORS issues and simplifying deployment.

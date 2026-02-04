@@ -2,11 +2,46 @@
   "name": "agentclinic",
   "version": "1.0.0",
   "description": "PetClinic for AI coding agent mental health",
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.563.0",
+    "next": "16.1.6",
+    "prisma": "^6.19.2",
+    "radix-ui": "^1.4.3",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "eslint-config-prettier": "^10.1.8",
+    "jsdom": "^27.0.1",
+    "prettier": "^3.8.1",
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "^5",
+    "vitest": "^4.0.18"
   }
 }

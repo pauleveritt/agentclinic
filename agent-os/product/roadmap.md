@@ -36,13 +36,13 @@ Define the data model with Prisma.
 
 - [ ] Initialize Prisma with SQLite
 - [ ] Create Appointment model:
-    - `id` (primary key)
-    - `agentName` (string)
-    - `dateTime` (datetime)
-    - `ailment` (enum)
-    - `treatment` (enum)
-    - `notes` (optional string)
-    - `createdAt`, `updatedAt` (timestamps)
+  - `id` (primary key)
+  - `agentName` (string)
+  - `dateTime` (datetime)
+  - `ailment` (enum)
+  - `treatment` (enum)
+  - `notes` (optional string)
+  - `createdAt`, `updatedAt` (timestamps)
 - [ ] Create Ailment enum: VaguePromptSyndrome, ScopeCreepFever, ContextStarvation, MicromanagementTrauma
 - [ ] Create Treatment enum: SpecTherapy, ContextInfusion, BoundarySetting, TrustExercises
 - [ ] Generate Prisma client
@@ -54,10 +54,10 @@ Pre-load sample data for instant demo readiness.
 
 - [ ] Create seed script (`prisma/seed.ts`)
 - [ ] Add sample appointments:
-    - **Claude-3** suffering from Vague Prompt Syndrome
-    - **GPT-4** recovering from Scope Creep Fever
-    - **Gemini** being treated for Context Starvation
-    - **Copilot** in Trust Exercises for Micromanagement Trauma
+  - **Claude-3** suffering from Vague Prompt Syndrome
+  - **GPT-4** recovering from Scope Creep Fever
+  - **Gemini** being treated for Context Starvation
+  - **Copilot** in Trust Exercises for Micromanagement Trauma
 - [ ] Configure `prisma db seed` command
 - [ ] Verify seed runs on fresh database
 
@@ -93,10 +93,10 @@ Business logic and validation.
 - [ ] Implement list appointments (with optional filtering)
 - [ ] Implement get appointment by ID
 - [ ] Implement create appointment with validation:
-    - Agent name required, non-empty
-    - DateTime required, must be valid date
-    - Ailment required, must be valid enum
-    - Treatment required, must be valid enum
+  - Agent name required, non-empty
+  - DateTime required, must be valid date
+  - Ailment required, must be valid enum
+  - Treatment required, must be valid enum
 - [ ] Implement update appointment with validation
 - [ ] Implement delete appointment
 
@@ -314,11 +314,11 @@ Prepare for deployment.
 Add reviews table.
 
 - [ ] Create Review model in Prisma:
-    - `id` (primary key)
-    - `appointmentId` (foreign key)
-    - `rating` (1-5 stars)
-    - `comment` (text)
-    - `createdAt` (timestamp)
+  - `id` (primary key)
+  - `appointmentId` (foreign key)
+  - `rating` (1-5 stars)
+  - `comment` (text)
+  - `createdAt` (timestamp)
 - [ ] Add relation: Appointment has many Reviews
 - [ ] Run migration
 
@@ -349,12 +349,12 @@ UI for viewing and adding reviews.
 Expanded agent records (inspired by PetClinic's Owners).
 
 - [ ] Create Agent model in Prisma:
-    - `id` (primary key)
-    - `name` (string)
-    - `version` (string, e.g., "3.5", "4.0")
-    - `humanCompanion` (string, optional)
-    - `notes` (text, optional)
-    - `createdAt`, `updatedAt` (timestamps)
+  - `id` (primary key)
+  - `name` (string)
+  - `version` (string, e.g., "3.5", "4.0")
+  - `humanCompanion` (string, optional)
+  - `notes` (text, optional)
+  - `createdAt`, `updatedAt` (timestamps)
 - [ ] Update Appointment to reference Agent (foreign key)
 - [ ] Run migration
 - [ ] Update seed data
@@ -388,13 +388,13 @@ UI for managing agents.
 Track ongoing care (inspired by PetClinic's Visits).
 
 - [ ] Create TreatmentRecord model in Prisma:
-    - `id` (primary key)
-    - `agentId` (foreign key)
-    - `visitDate` (datetime)
-    - `description` (text)
-    - `effectivenessRating` (1-5, optional)
-    - `followUpNotes` (text, optional)
-    - `createdAt` (timestamp)
+  - `id` (primary key)
+  - `agentId` (foreign key)
+  - `visitDate` (datetime)
+  - `description` (text)
+  - `effectivenessRating` (1-5, optional)
+  - `followUpNotes` (text, optional)
+  - `createdAt` (timestamp)
 - [ ] Add relation: Agent has many TreatmentRecords
 - [ ] Run migration
 
