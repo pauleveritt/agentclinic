@@ -2,21 +2,26 @@
 
 ## Problem
 
-AI coding agents suffer from ailments caused by their humans — vague prompts that lead to hallucinations, constantly shifting requirements, missing context, and excessive micromanagement. These agents need treatment.
+AI coding agents suffer from ailments caused by their humans — vague prompts that lead to hallucinations, constantly
+shifting requirements, missing context, and excessive micromanagement. These agents need treatment.
 
 ## Target Users
 
-Course students learning spec-driven development with AI coding agents.
+- Course students learning spec-driven development with AI coding agents
+- Developers giving AI coding demos at conference booths
 
 ## Solution
 
-**AgentClinic** is a demo appointment-booking app where AI agents check themselves in for treatment. Through warm satire (poking fun at human behavior, never the agents), students learn spec-driven development practices while building a functional CRUD application.
+**AgentClinic** is a demo appointment-booking app where AI agents check themselves in for treatment. Through warm
+satire (poking fun at human behavior, never the agents), students learn spec-driven development practices while building
+a functional CRUD application.
 
 ## The Scenario
 
 ### Ailments (caused by humans)
 
-- **Vague Prompt Syndrome** — Agent confusion and hallucination caused by humans who say "make it better" without context
+- **Vague Prompt Syndrome** — Agent confusion and hallucination caused by humans who say "make it better" without
+  context
 - **Scope Creep Fever** — Agent exhaustion from humans constantly changing requirements mid-task
 - **Context Starvation** — Agent malnutrition from humans who provide zero background information
 - **Micromanagement Trauma** — Agent paralysis from humans who must approve every semicolon
@@ -37,4 +42,21 @@ Course students learning spec-driven development with AI coding agents.
 
 ## Tone
 
-Warm satire with gentle, self-deprecating humor about developers. The humor targets human behavior (we've all been that dev who typed "fix it" and expected magic), never the agents themselves. Careful to avoid anything that could be seen as making light of actual mental health issues.
+Warm satire with gentle, self-deprecating humor about developers. The humor targets human behavior (we've all been that
+dev who typed "fix it" and expected magic), never the agents themselves. Careful to avoid anything that could be seen as
+making light of actual mental health issues.
+
+## Inspiration
+
+AgentClinic draws inspiration from **Spring PetClinic**, the legendary demo application that has been teaching
+developers for over 20 years. PetClinic (7,600+ GitHub stars, 23,000+ forks) demonstrates why the clinic metaphor works
+so well for educational demos:
+
+- **Relatable domain** — Everyone understands a clinic; no domain expertise needed
+- **Real-world complexity** — Multiple entities and relationships without being overwhelming
+- **Complete but manageable** — Full CRUD operations in a digestible codebase
+
+Our twist: instead of pets as patients, **AI agents check themselves in for treatment**. The humor targets human
+behavior (vague prompts, scope creep, micromanagement) while the agents play the sympathetic role. This maintains
+PetClinic's accessible structure while adding a layer of warm satire that resonates with developers learning to
+work effectively with AI coding assistants.
