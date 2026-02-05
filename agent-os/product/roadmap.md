@@ -24,18 +24,18 @@ Following the proven PetClinic 3-layer pattern:
 
 Set up the monorepo structure and tooling.
 
-- [ ] Initialize project with package.json
-- [ ] Configure TypeScript for shared types
-- [ ] Set up ESLint and Prettier
-- [ ] Create folder structure: `/backend`, `/frontend`, `/shared`
-- [ ] Add README with setup instructions
+- [x] Initialize project with package.json
+- [x] Configure TypeScript for shared types
+- [x] Set up ESLint and Prettier
+- [x] Create folder structure: `/backend`, `/frontend`, `/shared`
+- [x] Add README with setup instructions
 
 ### 1.2 Database Schema
 
 Define the data model with Prisma.
 
-- [ ] Initialize Prisma with SQLite
-- [ ] Create Appointment model:
+- [x] Initialize Prisma with SQLite
+- [x] Create Appointment model:
   - `id` (primary key)
   - `agentName` (string)
   - `dateTime` (datetime)
@@ -43,23 +43,23 @@ Define the data model with Prisma.
   - `treatment` (enum)
   - `notes` (optional string)
   - `createdAt`, `updatedAt` (timestamps)
-- [ ] Create Ailment enum: VaguePromptSyndrome, ScopeCreepFever, ContextStarvation, MicromanagementTrauma
-- [ ] Create Treatment enum: SpecTherapy, ContextInfusion, BoundarySetting, TrustExercises
-- [ ] Generate Prisma client
-- [ ] Run initial migration
+- [x] Create Ailment enum: VaguePromptSyndrome, ScopeCreepFever, ContextStarvation, MicromanagementTrauma
+- [x] Create Treatment enum: SpecTherapy, ContextInfusion, BoundarySetting, TrustExercises
+- [x] Generate Prisma client
+- [x] Run initial migration
 
 ### 1.3 Seed Data
 
 Pre-load sample data for instant demo readiness.
 
-- [ ] Create seed script (`prisma/seed.ts`)
-- [ ] Add sample appointments:
+- [x] Create seed script (`prisma/seed.ts`)
+- [x] Add sample appointments:
   - **Claude-3** suffering from Vague Prompt Syndrome
   - **GPT-4** recovering from Scope Creep Fever
   - **Gemini** being treated for Context Starvation
   - **Copilot** in Trust Exercises for Micromanagement Trauma
-- [ ] Configure `prisma db seed` command
-- [ ] Verify seed runs on fresh database
+- [x] Configure `prisma db seed` command
+- [x] Verify seed runs on fresh database
 
 ### 1.4 Backend Setup
 
