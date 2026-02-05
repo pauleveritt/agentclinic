@@ -10,3 +10,28 @@ datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
+
+enum Ailment {
+  VaguePromptSyndrome
+  ScopeCreepFever
+  ContextStarvation
+  MicromanagementTrauma
+}
+
+enum Treatment {
+  SpecTherapy
+  ContextInfusion
+  BoundarySetting
+  TrustExercises
+}
+
+model Appointment {
+  id        String    @id @default(cuid())
+  agentName String
+  dateTime  DateTime
+  ailment   Ailment
+  treatment Treatment
+  notes     String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}

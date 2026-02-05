@@ -1,1 +1,15 @@
 # Agent OS Standards Index
+
+database:
+  enum-naming:
+    description: Use PascalCase for Prisma enum values (VaguePromptSyndrome vs vague_prompt_syndrome)
+  id-strategy:
+    description: Use cuid() for primary keys instead of auto-increment integers
+  prisma-client:
+    description: Generate Prisma Client to lib/generated/prisma/ with relative imports
+  seed-pattern:
+    description: Idempotent seed scripts using deleteMany + createMany (dev only, not production)
+
+testing:
+  vitest-setup:
+    description: Vitest configuration with jsdom, explicit imports (no globals), and jest-dom setup
